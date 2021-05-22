@@ -10,8 +10,9 @@ app.set("view engine", "ejs");
 app.set("views", "some html");
 
 //connect with database;
+// please connect with your own mongoDB Atlas. the url i provide doesn't gonna work :)
 const dv_uri =
-  "mongodb+srv://ranjan:ranjan@cluster0.huv8w.mongodb.net/ranjan?retryWrites=true&w=majority";
+  "mongodb+srv://example:example@cluster0.huv8w.mongodb.net/example?retryWrites=true&w=majority";
 
 mongoose
   .connect(dv_uri, { useNewUrlParser: true, useUnifiedTopology: true })
